@@ -1,0 +1,60 @@
+body{
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+}
+h1{
+    font-size: 3rem;
+    margin: 2rem;
+}
+.dice{
+    font-size: 5rem;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.animation-roll{
+    animation-name: roll;
+}
+@keyframes roll {
+    0%{
+       transform: rotateY(0deg) rotateX(0deg);
+    }
+    100%{
+       transform: rotateY(720deg) rotateX(720deg);
+    }
+}
+
+button{
+    font-size: 1.2rem;
+    background-color:rgb(145, 216, 239); 
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+button:hover{
+    background-color: rgb(31, 167, 212);
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 3rem auto;
+    max-width: 600px;
+}
+li {
+    font-size: 1.2rem;
+    background-color: rgb(229, 227, 227);
+    padding: 0.8rem 1.2rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 3px rgb(0, 0, 0, 0.5);
+
+}
+li span{
+    font-size: 3rem;
+}
